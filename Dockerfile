@@ -6,7 +6,7 @@ RUN apt-get -y -qq install python-software-properties
 RUN apt-add-repository ppa:brightbox/ruby-ng
 RUN apt-get -y -qq update
 
-RUN apt-get -y -qq install ruby1.9
+RUN apt-get -y -qq install ruby2.0
 RUN apt-get -y -qq install rubygems ruby-switch
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
